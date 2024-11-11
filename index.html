@@ -1,0 +1,83 @@
+<!DOCTYPE Html>
+<html lang="en">
+<head>
+<script src="https://kit.fontawesome.com/0ccf658e67.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/input.css">
+ <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-black  " >
+    <div class=" justify-center items-center h-screen bg-black hidden loading relative z-[9999999]">
+        <span class="loader"></span>
+    </div>
+
+    <div class="sidebar w-[270px] bg-black fixed top-0 bottom-0 left-0 z-50  ">
+        <div class="sidleft flex flex-col justify-between bg-black absolute top-0 bottom-0 start-0 end-0  ms-6 pe-12">
+            <ul class="ancors flex flex-col gap-3 mt-8">
+                <li onclick="closeSidebar() ;icons() ;searched()" class="text-white text-start font-semibold text-base relative cursor-pointer search">Search</li>
+                <li  onclick="closeSidebar() ;icons()" class="text-white text-start font-semibold text-base Categories relative cursor-pointer">Categories</li>
+                <li  onclick="closeSidebar() ;icons()" class="text-white text-start font-semibold text-base Area relative cursor-pointer">Area</li>
+                <li onclick="closeSidebar() ;icons()" class="text-white text-start font-semibold text-base Ingredients relative cursor-pointer">Ingredients</li>
+                <li onclick="closeSidebar() ;icons() ;contactus()" class="text-white text-start font-semibold text-base relative cursor-pointer ContactUs">Contact Us</li>
+            </ul>
+            <div class="down mb-5">
+                <div class="icons flex  gap-1">
+                    <i class="fa-brands text-white text-start cursor-pointer rounded-md text-base fa-facebook"></i>
+                    <i class="fa-brands text-white text-start cursor-pointer  text-base fa-twitter"></i>
+                    <i class="fa-solid text-white text-start cursor-pointer  text-base  fa-globe"></i>
+                </div>
+                <p class=" text-white text-start  text-base">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+            <div class="sideright w-[70px] flex flex-col justify-between items-center bg-white absolute top-0 bottom-0 end-[-40px]">
+                <div class="umg w-[50px] mt-8">
+                <img src="./logo.png" class="w-full" alt="">
+                </div>
+                <i class="fa-solid text-4xl leading-9 cursor-pointer fa-bars open-close-icon" id="marker"></i>
+               
+                <div class="icons mb-8 flex flex-col gap-1">
+                    <i class="fa-solid text-start cursor-pointer text-base  fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                    </div>
+                </div>
+                
+                
+        </div>
+       
+    </div>
+    <div class="Search w-[75%] relative top-5   mx-auto mt-10 bg-black"id="searchData">
+            
+    </div>
+
+    <div class="home container mx-auto mt-10 bg-black">
+        <div class=" text-center grid grid-cols-1 md:grid-cols-4 gap-10" id="MealsData">
+           
+            
+        </div>
+    </div>
+
+    <div   class="container  mx-auto bg-black mt-10 details hidden ">
+        <div class="grid gap-8  grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)]" id="mealDetails">
+        
+        </div>
+    </div>
+
+
+   
+       
+    
+    
+
+
+
+
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/main.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
